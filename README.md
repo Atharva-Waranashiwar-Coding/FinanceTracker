@@ -5,7 +5,6 @@ An intuitive and visually engaging web application to help users manage and trac
 
 ## Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
@@ -14,9 +13,6 @@ An intuitive and visually engaging web application to help users manage and trac
 - [Contributing](#contributing)
 - [License](#license)
 
-## Demo
-
-![Expense Tracker Screenshot](./screenshots/expense-tracker.png)
 
 ## Features
 
