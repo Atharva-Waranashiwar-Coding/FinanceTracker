@@ -86,7 +86,7 @@ export default function Home() {
       <AddIncomeModal show={showAddIncomeModal} onClose={() => setShowAddIncomeModal(false)} />
       <AddExpensesModal show={showAddExpenseModal} onClose={() => setShowAddExpenseModal(false)} />
 
-      <main className="container max-w-10xl px-6 mx-auto">
+      <main className="container max-w-10xl px-6 py-20 mx-auto">
         <section className="py-3 flex flex-col items-center">
           <small className="text-gray-400 text-md">My Balance</small>
           <h2 className="text-4xl font-bold">{currencyFormatter(balance)}</h2>
@@ -121,9 +121,9 @@ export default function Home() {
         </section>
 
         {/* Charts */}
-        <section className="py-10">
+        <section className="py-10" id="stats">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-            <div style={{ width: "100%", height: "400px" }}> {/* Adjust height as needed */}
+            <div style={{ width: "100%", height: "400px" }}>
               <h3 className="text-xl font-semibold">Expenses by Category</h3>
               <Doughnut
                 data={expenseData}
@@ -136,7 +136,7 @@ export default function Home() {
                 style={{ width: "100%", height: "100%" }} // Ensures chart fills container
               />
             </div>
-            <div style={{ width: "100%", height: "400px" }}> {/* Adjust height as needed */}
+            <div style={{ width: "100%", height: "400px" }}>
               <h3 className="text-xl font-semibold">Income vs Expenses</h3>
               <Bar
                 data={incomeVsExpenseData}
