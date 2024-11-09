@@ -8,7 +8,7 @@ function Nav() {
   const { user, loading, logout } = useContext(authContext);
 
   return (
-    <header className="container max-w-6xl px-6 py-6 mx-auto ">
+    <header className="container max-w-12xl px-6 py-6 mx-auto ">
       <div className="flex items-center justify-center gap-20">
         {/* User information */}
         {user && !loading && (
@@ -24,11 +24,11 @@ function Nav() {
             </div>
 
             {/* name */}
-            <small>Hi, {user.displayName}!</small>
+            <p>Hi, {user.displayName}!</p>
           </div>
         )}
           <h1 className=" text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 drop-shadow-lg tracking-wide mb-6">
-            Expense Tracker
+            Atharva's Finance Tracker App
           </h1>
 
         {/* Right side of our navigation */}
